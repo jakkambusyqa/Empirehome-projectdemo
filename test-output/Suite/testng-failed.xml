@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.extentreportListener.Extentreport"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="com.empirehome.testcases.MovestockTest"/>
+      <class name="com.empirehome.testcases.Loginpagetest"/>
+      <class name="com.empirehome.testcases.Addproducttest"/>
+      <class name="com.empirehome.testcases.Addcatagorytest"/>
+      <class name="com.empirehome.testcases.Homepagetest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.empirehome.testcases.Addproducttest">
+        <methods>
+          <include name="usertypetest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.empirehome.testcases.Addproducttest -->
+      <class name="com.empirehome.testcases.Homepagetest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.empirehome.testcases.Homepagetest -->
+      <class name="com.empirehome.testcases.MovestockTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.empirehome.testcases.MovestockTest -->
+      <class name="com.empirehome.testcases.Addcatagorytest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="validateaddcatagory"/>
+        </methods>
+      </class> <!-- com.empirehome.testcases.Addcatagorytest -->
+      <class name="com.empirehome.testcases.Loginpagetest">
+        <methods>
+          <include name="Setup"/>
+          <include name="validatetitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.empirehome.testcases.Loginpagetest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
